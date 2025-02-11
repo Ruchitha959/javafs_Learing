@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="reservation-system">
+        <h1>Restaurant Reservation</h1>
+
+        <!-- Form to make a reservation -->
+        <form id="reservation-form">
+            <label for="name">Customer Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" required>
+
+            <label for="guests">Guest Count:</label>
+            <input type="number" id="guests" min="1" required>
+
+            <button type="submit">Make Reservation</button>
+        </form>
+
+        <h2>Seats Left: <span id="seats-left">20</span></h2>
+
+        <!-- Reservation Table -->
+        <table id="reservations-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Check-in Time</th>
+                    <th>Checkout</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Reservation entries will appear here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
